@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <title>Login form </title>
+    </head>
+    <body>
+        <p>Garage Controller: </p>
+        <div class="container">
+            <form action="check" class="form-inline" method="POST">
+                <input type="submit" class="btn btn-default" value="Check Garage Status">
+            </form>
+            <form action="change_status" class="form-inline" method="POST">
+                <input class="btn btn-default" type="submit" value="{{ action_tbd }}">
+            </form>
+            <p>{{ status }} </p>
+        </div>
+    </body>
+</html>
